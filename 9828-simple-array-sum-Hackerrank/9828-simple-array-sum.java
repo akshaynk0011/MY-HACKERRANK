@@ -1,26 +1,27 @@
-}
-        int result = simpleArraySum(ar);
-        for (String s : arStr) {
-            ar.add(Integer.parseInt(s));
+String[] arrTemp = scanner.nextLine().trim().split(" ");
         List<Integer> ar = new ArrayList<>();
-        String[] arStr = sc.nextLine().trim().split(" ");
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int n = Integer.parseInt(sc.nextLine().trim());
-    }
-
-            sum += x;
+        for (String s : arrTemp) {
+            ar.add(Integer.parseInt(s));
         }
-        return sum;
-        int sum = 0;
-        for (int x : ar) {
-public class Solution {
 
-    static int simpleArraySum(List<Integer> ar) {
-        System.out.println(result);
-        sc.close();
+        int result = simpleArraySum(ar);
+
+        bufferedWriter.write(String.valueOf(result));
+        bufferedWriter.newLine();
+
+        bufferedWriter.close();
+        scanner.close();
+
+    private static final Scanner scanner = new Scanner(System.in);
+
+    public static void main(String[] args) throws IOException {
+        BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(System.
+        getenv("OUTPUT_PATH")));
+
+        int n = Integer.parseInt(scanner.nextLine().trim());
+
     }
-import java.util.*;
+}
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
