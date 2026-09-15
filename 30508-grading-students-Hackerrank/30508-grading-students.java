@@ -15,13 +15,13 @@ return result;
 
         List<Integer> result = gradingStudents(grades);
 
-        for (int grade : result) {
-            System.out.println(grade);
         }
 
-        sc.close();
-    }
-}
+            }
+
+            result.add(grade);
+            if (nextMultiple - grade < 3) {
+                grade = nextMultiple;
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
