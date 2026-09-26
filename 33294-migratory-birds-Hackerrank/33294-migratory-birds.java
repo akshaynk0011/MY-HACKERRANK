@@ -1,27 +1,27 @@
-return answer;
-    }
+public static int migratoryBirds(List<Integer> arr) {
 
-    public static void main(String[] args) throws IOException {
+        int[] frequency = new int[6];
 
-        BufferedReader br = new BufferedReader(
-                new InputStreamReader(System.in)
-        );
-
-        int n = Integer.parseInt(br.readLine());
-
-        String[] input = br.readLine().split(" ");
-
-        List<Integer> arr = new ArrayList<>();
-
-        for (int i = 0; i < n; i++) {
-            arr.add(Integer.parseInt(input[i]));
+        // Count frequency of each bird type
+        for (int i = 0; i < arr.size(); i++) {
+            int bird = arr.get(i);
+            frequency[bird]++;
         }
 
-        int result = migratoryBirds(arr);
+        int maxFrequency = 0;
+        int answer = 0;
 
-        System.out.println(result);
-    }
-}
+        // Check bird types from smallest to largest
+        for (int i = 1; i <= 5; i++) {
+
+            if (frequency[i] > maxFrequency) {
+                maxFrequency = frequency[i];
+                answer = i;
+
+public class Solution {
+
+import java.io.*;
+import java.util.*;
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
