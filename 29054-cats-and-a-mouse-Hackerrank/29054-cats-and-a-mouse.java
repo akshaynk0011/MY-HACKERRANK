@@ -1,26 +1,27 @@
-}
+import java.io.*;
+
+public class Solution {
+
+    public static String catAndMouse(int x, int y, int z) {
+
+        int distanceA = Math.abs(x - z);
+        int distanceB = Math.abs(y - z);
+
+        if (distanceA < distanceB) {
+            return "Cat A";
+        } 
+        else if (distanceB < distanceA) {
+            return "Cat B";
+        } 
+        else {
+            return "Mouse C";
+        }
     }
 
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(
                 new InputStreamReader(System.in)
-        );
-
-        int q = Integer.parseInt(br.readLine());
-
-        for (int i = 0; i < q; i++) {
-
-            String[] input = br.readLine().split(" ");
-
-            int x = Integer.parseInt(input[0]);
-            int y = Integer.parseInt(input[1]);
-            int z = Integer.parseInt(input[2]);
-
-            System.out.println(catAndMouse(x, y, z));
-        }
-    }
-}
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
