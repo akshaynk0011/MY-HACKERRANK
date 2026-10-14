@@ -9,19 +9,18 @@
         int maxLength = 0;
 
         // Check adjacent numbers
+
+            frequency[a[i]]++;
         }
 
         // Count frequency of each number
         for (int i = 0; i < a.length; i++) {
-            frequency[a[i]]++;
+
         int[] frequency = new int[101];
-
-
-    public static int pickingNumbers(int[] a) {
-
 public class Solution {
 
-        return maxLength;
+    public static int pickingNumbers(int[] a) {
+import java.io.*;
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
