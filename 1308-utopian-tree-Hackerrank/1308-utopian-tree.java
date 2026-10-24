@@ -13,14 +13,15 @@ if (i % 2 == 1) {
 
         int t = sc.nextInt();
 
-        for (int i = 0; i < t; i++) {
-            int n = sc.nextInt();
-            System.out.println(utopianTree(n));
-        }
 
-        sc.close();
-    }
-}
+    public static int utopianTree(int n) {
+        int height = 1;
+
+        for (int i = 1; i <= n; i++) {
+
+public class Solution {
+
+import java.util.*;
 
 // Synced seamlessly with LeetHub Pro
 // Pro features: https://bit.ly/leethubpro | Free version: https://bit.ly/leethubv4
